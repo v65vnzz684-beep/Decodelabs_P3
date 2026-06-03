@@ -7,7 +7,7 @@ Built for the DecodeLabs Cybersecurity Training Programme — Batch 2026
 
 ## What is this?
 
-This is a command-line Python tool that scans an email (subject, sender, and body) for known phishing indicators, assigns a **danger score**, and delivers a clear triage verdict — just like a real SOC analyst would.
+This is a command-line Python tool that scans an email (subject, sender, and body) for known phishing indicators, assigns a **danger score**, and delivers a clear triage verdict.
 
 It is designed as a **learning tool** for interns and non-technical staff. Every check is explained in plain English inside the code itself.
 
@@ -32,7 +32,7 @@ Phishers exploit four psychological levers:
 
 - **Sample email runner** — analyses 3 built-in examples (legitimate email, mass phishing, CEO fraud) so you can see the tool in action immediately
 - **Manual email analyser** — paste any email you want to check
-- **Red flag reference checklist** — a static 13-point reference card to keep open while reviewing suspicious emails
+- **Red flag checklist** — a static 13-point reference card to keep open while reviewing suspicious emails
 - **Danger score bar** — visual progress bar showing threat severity at a glance
 - **Triage verdict** — one of three outcomes with a clear action step
 
@@ -83,7 +83,7 @@ You will see a menu with four options:
 ```
 [1]  Run the 3 built-in sample emails
 [2]  Analyse my own email
-[3]  View the Red Flag Reference Checklist
+[3]  View the Red Flag Checklist
 [4]  Quit
 ```
 
@@ -109,11 +109,17 @@ Displays a 13-point reference card grouped by category (Sender, Urgency, Fear, G
 ```
 phishing_analyzer.py    ← main script (run this)
 README.md               ← this file
+├── /docs
+│   ├── screenshots/
+├── main menu screen
+├── sample email analysis output
+├──manual email input+results
+├──checklist screen
 ```
 
 ---
 
-## Code walkthrough (for beginners)
+## Code walkthrough
 
 The script is divided into 9 clearly labelled sections:
 
